@@ -10,6 +10,10 @@ class ProfileAdmin(admin.ModelAdmin):
 class JobApplyingAdmin(admin.ModelAdmin):
     list_display = ('user', 'job_type', 'requirements', 'company_info', 'contacts', 'opportunities')
 
+    
+    
+    
+    
 admin.site.register(Skills)
 admin.site.register(News)
 admin.site.register(Contacts)
