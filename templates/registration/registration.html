@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}
+    Registration Page
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+
+            <div class="col-sm-6">
+                <hr>
+                <h5 class="card-title">Register Here</h5>
+                <form method="post">
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        <div class="row-content">
+                            <i class="fa fa-user"></i> |
+                            {{ form.username }}
+                        </div>
+                        <div class="row-content">
+                            <i class="fa fa-envelope"></i> |
+                            {{ form.email }}
+                        </div>
+                        <div class="row-content">
+                            <i class="fa fa-lock"></i> |
+                            {{ form.password1 }}
+                        </div>
+                        <div class="row-content">
+                            <i class="fa fa-lock"></i> |
+                            {{ form.password2 }}
+                        </div>
+                    </fieldset>
+                    <button class="btn btn-dark mb-auto">Register</button>
+                </form>
+                <hr>
+            </div>
+
+        </div>
+
+{% endblock %}

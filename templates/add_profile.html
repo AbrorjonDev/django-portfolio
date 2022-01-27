@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link for css -->
+    <link rel="stylesheet" href="../static/css/index.css">
+
+    <!-- link for font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link for bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>John Doe - Developers PortFolios</title>
+</head>
+<body>
+    <!-- header section  -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-black bg-black">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">PortFolios</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Developers</a>
+                </li>
+
+                </ul>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                    <i class="fa fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="#">Register</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+    <a href="./index.html"><small>Asosiy</small></a> / <a href="./index.html"><small>Developers</small></a> / <a href="#"><small>John Doe</small></a> >
+    <hr>
+    <div class="profile-info">
+        <div class="buttons">
+            <p class="red-circle"></p>
+            <p class="yellow-circle"></p>
+            <p class="green-circle"></p>
+        </div>
+        <form action="" method="post">
+        <fieldset class="form-group">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="profile-account-img" src="../static/images/user_img.png"/><a><i class="fa fa-cogs"></i></a>
+                </div>
+                <div class="col-md-8">
+                    <div class="row-content">
+                        <input type="text" name="name" placeholder="Your fullname.."/>
+                    </div>
+
+                    <div class="row-content">
+                        <input type="text"placeholder="Add your skills here via colons(,)." name='skills'/> 
+                    </div>
+                    <div class="row-content ">
+                        <input type="text" placeholder="Your experience.."/ name="level">
+                    </div>
+
+                    <div class="row-content">    
+                        <input type="text" name="bio" placeholder="Add info describes you.">
+                    </div>
+                    
+                    </div>
+                </div> 
+                <hr>
+                
+                    <h4 class="mb-auto" style="padding:0 40px;">Contact Info</h4>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="row-content">
+                                <i class="fa fa-envelope"></i> |
+                                <input type="text" name="envelope" placeholder="Your email address.."/>
+                            </div>
+                            
+                            <div class="row-content">
+                                <i class="fa fa-phone"></i> |
+                                <input type="text" name="phone" placeholder="Your phone number.."/>
+                            </div>
+                            <div class="row-content">
+                                <i class="fa fa-telegram"></i> |
+                                <input type="text" name="telegram" placeholder="Your telegram account.."/>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="row-content">
+                                <i class="fa fa-facebook"></i> |
+                                <input type="text" name="facebook" placeholder="Your facebook account.."/>
+                            </div>
+                            <div class="row-content"> 
+                                <i class="fa fa-instagram"></i> |
+                                <input type="text" name="name" placeholder="Your instagram account.."/>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    
+                    
+
+                </div>    
+            </div>
+
+        </fieldset>
+            <button style="margin: 1.1rem 15%;" class="btn btn-dark" type="submit">Save</button>    
+        
+        </form>
+    </div>
+    <div class="dev-jobs">
+    <hr>
+        <div class="projects">Add Your Real Projects</div> 
+        <form action="" method="post" enctype="multipart/form-data">
+        <fieldsetclass="form-group">
+            <div class="row-content">
+                <input type="text" name="card-title" placeholder="Project name here.."/>
+            </div>
+            <div class="row-content">
+                <input type="text" name="card-description" placeholder="Project description here.."/>
+            </div>
+            <div class="row-content">
+                <input type="link" name="card-link" placeholder="Project Direct Link here.."/>
+            </div>
+            <label forid="img">Choose image for your project.</lable>
+            <input type="file" id="img" name="card-img" />
+        </fieldset>
+       <br>
+            <button style="margin: 1.1rem 15%;" class="btn btn-dark" type="submit">Save</button>    
+        </form>
+        
+    </div>
+    <hr>
+    <a href="#" class="btn btn-dark gen-resume">Generate Resume CV</a>
+    </main>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-sm-3 footer-main">
+                <h5>Developers PortFolios</h6>
+                <p> Here you can find talents*</p>
+            </div>
+            <div class="col-sm-3">
+                <a href="#"><i class="fa fa-telegram" width="20" height="20"></i></a>
+                <a href="#"><i class="fa fa-instagram" width="20" height="20"></i></a>
+                <a href="#"><i class="fa fa-facebook" width="20" height="20"></i></a>
+                <a href="#"><i class="fa fa-envelope" width="20" height="20"></i></a>
+            </div>
+            <div class="col-sm-3">
+
+                    <a href="#">Privacy and Security</a>
+                    <a href="./authentication.html">Login</a>
+                    <a href="./authentication.html">Register</a>
+                    <a href="#">News</a>
+
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
